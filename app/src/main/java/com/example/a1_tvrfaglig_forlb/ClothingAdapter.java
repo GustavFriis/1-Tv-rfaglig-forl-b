@@ -6,16 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class ClothingBox extends ArrayAdapter<Clothing> {
-    public ClothingBox(Context context, int resource, List<Clothing> clothingList){
+public class ClothingAdapter extends ArrayAdapter<Clothing> {
+    public ClothingAdapter(Context context, int resource, List<Clothing> clothingList){
         super(context,resource,clothingList);
 
     }
@@ -26,10 +22,13 @@ public class ClothingBox extends ArrayAdapter<Clothing> {
         if (convertView == null){
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.clothing_box, parent, false);
         }
-        TextView textView = (TextView) convertView.findViewById(R.id.WebsiteName);
+
+        TextView websiteTextView = (TextView) convertView.findViewById(R.id.Name);
+        TextView nameTextView = (TextView) convertView.findViewById(R.id.WebsiteName);
         ImageView imageView = (ImageView) convertView.findViewById(R.id.WebsiteImage);
 
-        textView.setText(clothing.getWebsite());
+        websiteTextView.setText(clothing.getWebsite());
+        nameTextView.setText(clothing.getName());
         imageView.setImageResource(clothing.getImageWebsite());
 
         return convertView;

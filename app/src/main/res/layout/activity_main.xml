@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="Start"
         android:onClick="start"
-        android:background="#2DD881"
+        android:backgroundTint="#2DD881"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

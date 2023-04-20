@@ -18,10 +18,17 @@ public class ClothingDetails extends AppCompatActivity {
         setValues();
     }
 
-    private void getSelectedClothing(){
+    private void getSelectedClothing() {
         Intent previousIntent = getIntent();
-        String parsedStringWebsite = previousIntent.getStringExtra("website");
-        selectedClothing = ClothingManager.clothingList.get(Integer.valueOf(parsedStringWebsite));
+        String website = previousIntent.getStringExtra("website");
+
+        for (Clothing clothing : SearchActivity.clothingList) {
+            if (clothing.getWebsite().equals(website)) {
+                selectedClothing = clothing;
+            }
+        }
+
+        System.out.println("Clothing not found");
     }
 
     private void setValues (){

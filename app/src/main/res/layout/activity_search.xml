@@ -70,16 +70,18 @@
     
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:id="@+id/clothingListView"/>
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
-        app:queryHint="Search Here For Your Desired Item"
+        app:queryHint="Search..."
         android:textColorHint="#2DD881"
         android:background="@drawable/searchvieww"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"

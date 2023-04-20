@@ -28,8 +28,10 @@ public class ClothesAdapter extends ArrayAdapter<repoClothingData> {
         }
         TextView textView = (TextView) convertView.findViewById(R.id.clothingName);
 
-textView.setText(clothingData.getName());
+//textView.setText(clothingData.getName());
         return convertView;
-    }
+      }
+
+
 
 }

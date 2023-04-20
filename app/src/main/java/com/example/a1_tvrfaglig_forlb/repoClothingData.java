@@ -1,7 +1,6 @@
 package com.example.a1_tvrfaglig_forlb;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 
 import java.util.ArrayList;
 
@@ -9,21 +8,21 @@ public class repoClothingData {
     public String name;
     public String brand;
     public double price;
-    public boolean estDelivery;
+    public boolean FastDelivery;
     public boolean inStock;
     public boolean used;
 
 
 
-    public repoClothingData(String name, String brand, double price, boolean estDelivery, boolean inStock, boolean used) {
+    public repoClothingData(String name, String brand, double price, boolean FastDelivery, boolean inStock, boolean used) {
         this.name = name;
         this.brand = brand;
         this.price = price;
-        this.estDelivery = estDelivery;
+        this.FastDelivery = FastDelivery;
         this.inStock = inStock;
         this.used = used;
     }
-    public static ArrayList<repoClothingData> clothingList;
+    public ArrayList<repoClothingData> clothingList;
     repoClothingData shoesAir1s = new repoClothingData("Air force 1s","Nike",900.00,true,true,true);
     repoClothingData shoesJordans = new repoClothingData("Jordans panda low","Nike",2500.00,true,true,false);
     repoClothingData shoesVans = new repoClothingData("Slipon white","Vans",400.00,true,true,false);
@@ -50,7 +49,7 @@ public class repoClothingData {
     repoClothingData jacketRain = new repoClothingData("Rain jacket green","Gucci",3500.00,true,true,false);
 
     public repoClothingData() {
-        ArrayList<repoClothingData> clothingList = new ArrayList<repoClothingData>();
+        //clothingList = new ArrayList<repoClothingData>();
 
             clothingList.add(shoesAir1s);
             clothingList.add(shoesJordans);
@@ -77,11 +76,4 @@ public class repoClothingData {
             clothingList.add(jacketDenim);
             clothingList.add(jacketWinter);
         }
-
-
-    public String getName() {
-        return name;
-    }
-
-
 }

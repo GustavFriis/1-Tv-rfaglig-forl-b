@@ -71,9 +71,9 @@ private SearchView searchView;
         clothingList.add(jacketDenim);
         clothingList.add(jacketWinter);
     }
-    private void List(){
-        listView = (ListView) findViewById(R.id.clothingName)
-    }
+    //private void List(){
+        //listView = (ListView) findViewById(R.id.clothingName)
+    //}
 
 
 

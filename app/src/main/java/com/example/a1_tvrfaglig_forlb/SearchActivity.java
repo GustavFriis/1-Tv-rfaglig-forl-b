@@ -48,16 +48,21 @@ public class SearchActivity extends AppCompatActivity {
                         filteredClothing.add(clothing);
                     }
                 }
+                if (s.isEmpty()){
+                    listView.setVisibility(View.GONE);
+                } else {
 
-                ClothingAdapter clothingAdapter = new ClothingAdapter(getApplicationContext(), 0, filteredClothing);
-                listView.setAdapter(clothingAdapter);
-
+                    ClothingAdapter clothingAdapter = new ClothingAdapter(getApplicationContext(), 0, filteredClothing);
+                    listView.setAdapter(clothingAdapter);
+                    listView.setVisibility(View.VISIBLE);
+                }
                 return false;
 
             }
         }
      );
     }
+
 
     private void setUpData() {
 

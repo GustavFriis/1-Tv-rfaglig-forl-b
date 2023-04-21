@@ -101,7 +101,6 @@
         android:textColorHint="#2DD881"
         android:background="@drawable/searchvieww"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"

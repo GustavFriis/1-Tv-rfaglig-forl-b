@@ -28,7 +28,6 @@ public class SearchActivity extends AppCompatActivity {
         listView.setVisibility(View.GONE);
         setUpOnClickListener();
         initSearchWidgets();
-
     }
 
     private void initSearchWidgets()
@@ -69,7 +68,7 @@ public class SearchActivity extends AppCompatActivity {
 
     private void setUpData() {
 
-        Clothing website1 = new Clothing("Carhartt Grey t-shirt",500,"Seller.com",R.drawable.ic_launcher_background,true, true);
+        Clothing website1 = new Clothing("Carhartt Grey T-Shirt",500,"Seller.com",R.drawable.ic_launcher_background,true, true);
         clothingList.add(website1);
 
         Clothing website2 = new Clothing("Nike Air Force 1",600,"ReSeller.com",R.drawable.ic_launcher_background,true, false);
@@ -81,31 +80,31 @@ public class SearchActivity extends AppCompatActivity {
         Clothing website4 = new Clothing("Jordan Panda",2000,"shoes.com",R.drawable.ic_launcher_background,true, true);
         clothingList.add(website4);
 
-        Clothing website5 = new Clothing("Bershka white t-shirt",450,"getthisstreet.com",R.drawable.ic_launcher_background,false, true);
+        Clothing website5 = new Clothing("Bershka White T-Shirt",450,"getthisstreet.com",R.drawable.ic_launcher_background,false, true);
         clothingList.add(website5);
 
-        Clothing website6 = new Clothing("Carhartt Grey t-shirt",450,"getthisstreet.com",R.drawable.ic_launcher_background,true, false);
+        Clothing website6 = new Clothing("Carhartt Grey T-Shirt",450,"getthisstreet.com",R.drawable.ic_launcher_background,true, false);
         clothingList.add(website6);
 
-        Clothing website7 = new Clothing("Le Baiser hoodie",750,"getthisstreet.com",R.drawable.ic_launcher_background,false, true);
+        Clothing website7 = new Clothing("Le Baiser Hoodie",750,"getthisstreet.com",R.drawable.ic_launcher_background,false, true);
         clothingList.add(website7);
 
         Clothing website8 = new Clothing("Nike Air Force 1",900,"nike.com",R.drawable.ic_launcher_background,true, true);
         clothingList.add(website8);
 
-        Clothing website9 = new Clothing("Supreme hoodie white",3100,"getthisstreet.com",R.drawable.ic_launcher_background,true, true);
+        Clothing website9 = new Clothing("Supreme hoodie White",3100,"getthisstreet.com",R.drawable.ic_launcher_background,true, true);
         clothingList.add(website9);
 
-        Clothing website10 = new Clothing("Carhartt Green pants",650,"getthispants.com",R.drawable.ic_launcher_background,true, true);
+        Clothing website10 = new Clothing("Carhartt Green Pants",650,"getthispants.com",R.drawable.ic_launcher_background,true, true);
         clothingList.add(website10);
 
-        Clothing website11 = new Clothing("Carhartt Green t-shity",350,"getthisstreet.com",R.drawable.ic_launcher_background,true, true);
+        Clothing website11 = new Clothing("Carhartt Green T-Shirt",350,"getthisstreet.com",R.drawable.ic_launcher_background,true, true);
         clothingList.add(website11);
 
-        Clothing website12 = new Clothing("Gucci Belt classic",900,"getthisbelt.com",R.drawable.ic_launcher_background,true, true);
+        Clothing website12 = new Clothing("Gucci Belt Classic",900,"getthisbelt.com",R.drawable.ic_launcher_background,true, true);
         clothingList.add(website12);
 
-        Clothing website13 = new Clothing("Gucci belt classic",899,"damn.com",R.drawable.ic_launcher_background,true, true);
+        Clothing website13 = new Clothing("Gucci belt Classic",899,"damn.com",R.drawable.ic_launcher_background,true, true);
         clothingList.add(website13);
 
         Clothing website14 = new Clothing("Jordan Panda ",1999,"shoesReseller.com",R.drawable.ic_launcher_background,true, true);

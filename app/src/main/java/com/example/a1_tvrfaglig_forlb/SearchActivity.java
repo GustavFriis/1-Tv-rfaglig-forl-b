@@ -25,8 +25,10 @@ public class SearchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_search);
         setUpData();
         setUpList();
+        listView.setVisibility(View.GONE);
         setUpOnClickListener();
         initSearchWidgets();
+
     }
 
     private void initSearchWidgets()
@@ -61,6 +63,7 @@ public class SearchActivity extends AppCompatActivity {
             }
         }
      );
+        listView.setVisibility(View.GONE);
     }
 
 

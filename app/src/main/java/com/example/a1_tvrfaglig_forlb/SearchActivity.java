@@ -19,6 +19,7 @@ public class SearchActivity extends AppCompatActivity {
 
     public ListView listView;
 
+    //David, Abdul, Gustav
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,15 +31,18 @@ public class SearchActivity extends AppCompatActivity {
         initSearchWidgets();
     }
 
+    //David, Abdul, Gustav
     private void initSearchWidgets()
     {
         SearchView searchView = (SearchView) findViewById(R.id.search_view);
 
+        //David, Abdul, Gustav
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener(){
             public boolean onQueryTextSubmit(String s) {
                 return false;
             }
 
+            //David, Abdul, Gustav
             @Override
             public boolean onQueryTextChange(String s) {
 
@@ -66,6 +70,7 @@ public class SearchActivity extends AppCompatActivity {
     }
 
 
+    //David, Abdul, Gustav
     private void setUpData() {
 
         Clothing website1 = new Clothing("Carhartt Grey T-Shirt","500 Kr","Seller.com",R.drawable.ic_launcher_background,true, true);
@@ -114,6 +119,7 @@ public class SearchActivity extends AppCompatActivity {
 
     }
 
+    //David
     private void setUpList(){
         listView = (ListView) findViewById(R.id.clothingListView);
 
@@ -122,7 +128,7 @@ public class SearchActivity extends AppCompatActivity {
     }
 
 
-
+//David
     private void setUpOnClickListener(){
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

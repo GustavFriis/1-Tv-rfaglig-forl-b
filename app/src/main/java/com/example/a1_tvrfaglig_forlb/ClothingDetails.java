@@ -10,6 +10,8 @@ import android.widget.TextView;
 public class ClothingDetails extends AppCompatActivity {
 
     Clothing selectedClothing;
+
+    //David, Abdul, Gustav
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +20,7 @@ public class ClothingDetails extends AppCompatActivity {
         setValues();
     }
 
+    //David, Abdul, Gustav
     private void getSelectedClothing() {
         Intent previousIntent = getIntent();
         String website = previousIntent.getStringExtra("website");
@@ -31,6 +34,7 @@ public class ClothingDetails extends AppCompatActivity {
         System.out.println("Clothing not found");
     }
 
+    //Abdul
     private void setValues (){
         TextView textView = (TextView) findViewById(R.id.WebsiteName);
         ImageView imageView = (ImageView) findViewById(R.id.WebsiteImage);

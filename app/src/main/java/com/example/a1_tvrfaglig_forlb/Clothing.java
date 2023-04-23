@@ -1,5 +1,6 @@
 package com.example.a1_tvrfaglig_forlb;
 
+//Gustav
 public class Clothing {
         private String name;
         private String price;

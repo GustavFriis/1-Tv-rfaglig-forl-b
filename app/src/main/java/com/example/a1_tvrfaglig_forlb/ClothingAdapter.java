@@ -10,12 +10,14 @@ import android.widget.TextView;
 
 import java.util.List;
 
+// David, Abdul, Gustav
 public class ClothingAdapter extends ArrayAdapter<Clothing> {
     public ClothingAdapter(Context context, int resource, List<Clothing> clothingList){
         super(context,resource,clothingList);
 
     }
 
+    //David, Abdul, Gustav
     public View getView(int position, View convertView, ViewGroup parent) {
         Clothing clothing = getItem(position);
         if (convertView == null){

@@ -16,7 +16,6 @@ public class ClothingAdapter extends ArrayAdapter<Clothing> {
 
     }
 
-    @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         Clothing clothing = getItem(position);
         if (convertView == null){
@@ -27,7 +26,7 @@ public class ClothingAdapter extends ArrayAdapter<Clothing> {
         TextView nameTextView = (TextView) convertView.findViewById(R.id.WebsiteName);
         ImageView imageView = (ImageView) convertView.findViewById(R.id.WebsiteImage);
 
-        websiteTextView.setText(clothing.getWebsite());
+        websiteTextView.setText(clothing.getPrice());
         nameTextView.setText(clothing.getName());
         imageView.setImageResource(clothing.getImageWebsite());
 

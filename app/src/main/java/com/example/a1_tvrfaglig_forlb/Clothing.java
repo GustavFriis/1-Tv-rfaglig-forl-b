@@ -2,7 +2,7 @@ package com.example.a1_tvrfaglig_forlb;
 
 public class Clothing {
         private String name;
-        private int price;
+        private String price;
         private String website;
 
         private int imageWebsite;
@@ -10,7 +10,7 @@ public class Clothing {
         private boolean fastDelivery;
 
 
-    public Clothing (String name, int price, String website, int imageWebsite, boolean inStock, boolean fastDelivery) {
+    public Clothing (String name, String price, String website, int imageWebsite, boolean inStock, boolean fastDelivery) {
             this.name = name;
             this.price = price;
             this.website = website;
@@ -26,11 +26,11 @@ public class Clothing {
             this.name = name;
         }
 
-        public int getPrice() {
+        public String getPrice() {
             return price;
         }
 
-        public void setPrice(int price) {
+        public void setPrice(String price) {
             this.price = price;
         }
 

@@ -32,4 +32,4 @@ public class ClothingAdapter extends ArrayAdapter<Clothing> {
 
         return convertView;
     }
-}
+} //commit
